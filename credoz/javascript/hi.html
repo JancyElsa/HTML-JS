@@ -1,0 +1,43 @@
+et x;
+x=document.getElementById("result").value;
+ 
+function percentage(){
+    
+    let a;
+let z;
+ 
+a = document.getElementById("salary").value ;  
+    if (a<=300000){
+        
+     z = (a/100)*8;
+      document.getElementById('result').value = z;
+    }
+    else if(a>300000 && a<=500000){
+        z=(a/100)*10;
+        document.getElementById('result').value =z;   
+    }
+    else if(a>500000 && a<=800000){
+        z=(a/100)*12;
+        document.getElementById('result').value =z;  
+    }
+    else if (a>800000 && a<=1000000){
+        z=(a/100)*14;
+        document.getElementById('result').value =z; 
+    } 
+    
+}
+function agelimit(){
+    let age;
+    let ageres;
+     age = document.getElementById("age").value;
+    if (age<18 || age>60)
+    {
+        x =  document.getElementById("result").value ;
+    ageres = (x/100)*50;
+    document.getElementById("ageres").value = ageres;
+    console.log(x);
+    }
+    else {
+        document.getElementById("result").value = x;
+       }
+   
